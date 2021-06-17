@@ -1,0 +1,265 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.body {
+	background: url(grass-opacity75.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	background: #a67936;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.logo {
+	margin: 15px 2.5% 15px 2.5%;
+}
+
+.logo img {
+	width: 97px;
+	height: 87px;
+	transform: scale(-1, 1);
+}
+
+ul.menu-link{
+	height: 90px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-link li{
+	width:25%;
+}
+
+.menu-link a{
+	display: block;
+	padding: 40px 0;
+	background: #a67936;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font-size: 250%;
+	font-family: monospace;
+}
+
+.menu-link a:focus {
+  background: #a67936;
+}
+
+.menu-link a:hover {
+  background: #946b30;
+  text-decoration: underline;
+}
+
+.menu-link a:active {
+  background: #5c431e;
+  text-decoration: underline;
+}
+
+.label {
+	margin: 0;
+	padding: 15% 0 20% 0;
+}
+
+.label-container {
+	padding: 0;
+	margin: 0 0 0 0;
+}
+
+.label img{
+	width: 97px;
+	height: 87px;
+	transform: scale(-1, 1);
+	margin: 0 0 -114px -100px;
+}
+
+.label h1{
+	font-family: Comfortaa;
+	font-size: 96px;
+	font-style: normal;
+	text-align: center;
+	margin: 0 0 -10px 0;
+}
+
+.label h5{
+	font-family: Comfortaa;
+	font-size: 24px;
+	font-style: normal;
+	text-align: center;
+	margin: 0 0 0 -97px;
+}
+
+.label hr{
+	background-color: #000;
+	height: 9px;
+	border: none;
+	margin: 0 0 0 -25px;
+	border-radius: 0 100px 100px 0/0 9px 9px 0;
+}
+
+.slider-wrapper {
+	background-color: #ecc386;
+	padding: 25px 5%;
+	width: 100%;
+}
+
+.slider-container {
+	background: rgba(232,173,87,0.75);
+	padding: 15px 13%;
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.slider-track {
+	display: flex;
+	transition: .2s;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 642px;
+}
+
+.slide {
+	height: 642px;
+	width: 335px;
+	padding: 5px;
+	background-color: rgba(122,80,31,0.39);
+	display: block;
+	border-radius: 15px;
+	margin: 0;
+}
+
+.slide p {
+	display: block;
+	width: 325px;
+	height: 240px;
+	text-align: left;
+	color: #000;
+	font-size: 250%;
+	font-family: monospace;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+.slide img {
+	display: block;
+	width: 325px;
+	height: 325px;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+.slide-button {
+	text-align: center;
+	background: linear-gradient(to top, rgba(35,166,72,1), rgba(52, 221, 49, 1));
+	border-radius: 8px;
+	box-shadow: 0 4px 0 rgba(29, 134, 59, 1);
+	padding: 5px 0 10px;
+	display: block;
+}
+
+.slide-button a {
+	font-family: monospace;
+	font-size: 200%;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 120px 10px;
+}
+
+.slide-button:active {
+	box-shadow: none;
+	background: linear-gradient(to bottom, rgba(35,166,72,1), rgba(52, 221, 49, 1));
+}
+
+.slide:nth-child(3n+1) {
+	background-color: red;
+}
+
+.slide:nth-child(3n+2) {
+	background-color: green;
+}
+
+.slide:nth-child(3n+3) {
+	background-color: blue;
+}
+
+.slider-buttons {
+	text-align: center;
+	font-family: monospace;
+	font-size: 200%;
+}
+
+.slide-scroll {
+	width: 39px;
+	height: 39px;
+	margin: 15px;
+	background-color: rgba(122,80,31,0.39);
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.contacts {
+	text-align: center;
+	color: #000;
+	font-family: monospace;
+	width: 100%;
+	padding: 10% 0;
+}
+
+.contacts-container {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-around
+}
+
+.contacts h1 {
+	font-size: 250%;
+}
+
+.contacts p {
+	font-size: 150%;
+}
+
+.contacts hr {
+	background-color: #000;
+	border: none;
+	height: 2px;
+	margin: 0 3% 0 3%;
+}
+
+.footer {
+	background: linear-gradient(to bottom, #a67936, #ffffff);
+	margin: 0;
+	padding: 3% 0 6% 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.footer-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-around
+}
